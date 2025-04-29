@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hich - CV Professionnel</title>
+    <style>
+        /* CSS Styles */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --text-color: #333;
+            --text-light: #7f8c8d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .sidebar {
+            flex: 1;
+            min-width: 300px;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .main-content {
+            flex: 2;
+            min-width: 300px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: white;
+            text-transform: uppercase;
+        }
+        
+        .title {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--secondary-color);
+            text-transform: uppercase;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-icon {
+            width: 20px;
+            text-align: center;
+            color: var(--secondary-color);
+        }
+        
+        .education-item, .experience-item {
+            margin-bottom: 20px;
+        }
+        
+        .degree, .position {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        .institution, .company {
+            font-weight: 500;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+        
+        .date {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .description {
+            margin-bottom: 5px;
+            font-size: 1.15rem;
+            font-style:initial;
+            text-align: justify;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .languages-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .language {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .language-name {
+            font-weight: 500;
+        }
+        
+        .reference {
+            margin-bottom: 20px;
+        }
+        
+        .reference-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .reference-position {
+            color: var(--text-light);
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .sidebar, .main-content {
+                width: 100%;
+            }
+        }
+        
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .section {
+            animation: fadeIn 0.5s ease-out forwards;
+            opacity: 0;
+        }
+        
+        .section:nth-child(1) { animation-delay: 0.1s; }
+        .section:nth-child(2) { animation-delay: 0.2s; }
+        .section:nth-child(3) { animation-delay: 0.3s; }
+        .section:nth-child(4) { animation-delay: 0.4s; }
+        .section:nth-child(5) { animation-delay: 0.5s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="header">
+                <h1 class="name">Hicham Ait Douch</h1>
+                <p class="title"> </p>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <span>hichamaitdouch@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🏠</span>
+                        <span>Lastah, Taroudant City</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span>06 14-98 86 33</span>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Compétences</h2>
+                <div class="skills-list">
+                    <span class="skill">Compétences en présentation </span>   
+                    <span class="skill">Compétences en négociation</span>
+                    <span class="skill">Résolution de problèmes</span>
+                    <span class="skill">Gestion du temps</span>
+            <div class="section">
+                <h2 class="section-title">Langues</h2>
+                <div class="languages-list">
+                    <div class="language">
+                        <span class="language-name">Français </span>
+                    </div>
+                    <div class="language">
+                        <span class="language-name">Anglais  </span>
+                    </div>
+                    <div class="language">
+                        <span class="language-name">Espagnol </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Compétences Informatiques</h2>
+                <div class="skills-list">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">Flutter</span>
+                    <span class="skill">WordPress</span>
+                </div>
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <div class="section">
+                <h2 class="section-title">Profil</h2>
+                <p class="description">
+                   Titulaire d'une Baccalauréat obtenu en 2024, à lycée Moulay Youssef, j'ai poursuivi ma formation dans le domaine de l'informatique, ce qui m'a permis d'acquérir des bases solides tant théoriques que pratiques.
+                    </p>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Objectifs Professionnels</h2>
+                <ul style="padding-left: 50px;">
+                    <li><b>Spécialiser dans le domaine du Web développement</b></li>
+                    <li><b>Obtention des certificats internationaux accrédités</b></li>
+                    <li><b>Créer une application de communication</b></li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Formation</h2>
+                <div class="education-item">
+
+                </div>
+                <div class="education-item">
+                    <h3 class="degree">Participation à l'exposition nationale de technologie</h3>
+                </div>
+                <div class="education-item">
+                    <h3 class="degree">Formation de technologie et AI</h3>
+                </div>
+                <div class="education-item">
+                    <h3 class="degree">Formation de WordPress</h3>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Projets</h2>
+                <div class="experience-item">
+                    <h3 class="position">Développement Web</h3>
+                    <p class="description">
+                        Création de sites web avec HTML, CSS et JavaScript.
+                    </p>
+                </div>
+                <div class="experience-item">
+                    <h3 class="position">Développement d'Applications</h3>
+                    <p class="description">
+                        Développement d'applications mobiles avec Flutter.
+                    </p>
+                </div>
+                <div class="experience-item">
+                    <h3 class="position">Programmation Python</h3>
+                    <p class="description">
+                        Développement de scripts et applications avec Python.
+                    </p>
+                </div>
+                <div class="section">
+                    <h2 class="section-title">Qualités</h2>
+                    <ul style="padding-left: 50px;">
+                        <li><b>Esprit d'analyse et de synthèse</b></li>
+                        <li><b>Curisosité et initiative</b></li>
+                        <li><b>Travail indépendant</b></li>
+                        <li><b>Esprit d'innovation</b></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // JavaScript for additional interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click effect to skills
+            const skills = document.querySelectorAll('.skill');
+            skills.forEach(skill => {
+                skill.addEventListener('click', function() {
+                    this.style.transform = 'scale(1.05)';
+                    this.style.backgroundColor = '#3498db';
+                    this.style.color = 'white';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                        this.style.backgroundColor = '';
+                        this.style.color = '';
+                    }, 300);
+                });
+            });
+            
+            // Print button functionality (you can add a print button in HTML)
+            const printButton = document.createElement('button');
+            printButton.textContent = 'Imprimer le CV';
+            printButton.style.position = 'fixed';
+            printButton.style.bottom = '20px';
+            printButton.style.right = '20px';
+            printButton.style.padding = '10px 20px';
+            printButton.style.backgroundColor = '#2c3e50';
+            printButton.style.color = 'white';
+            printButton.style.border = 'none';
+            printButton.style.borderRadius = '5px';
+            printButton.style.cursor = 'pointer';
+            printButton.style.zIndex = '1000';
+            
+            printButton.addEventListener('click', function() {
+                window.print();
+            });
+            
+            document.body.appendChild(printButton);
+        });
+    </script>
+</body>
+</html>
